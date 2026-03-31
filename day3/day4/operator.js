@@ -90,3 +90,12 @@ console.log(3&4)
 // 100
 
 console.log(5^4);
+console.log(5<<3);
+//  5 multiply by 2 ki power 3 
+
+console.log(5>>3);
+
+console.log(20>>2);
+// 20 divide by 2 ki power 2
+
+
