@@ -92,27 +92,63 @@
 
 // 2. Make function to check even/odd
 
- function check(num){
-if (num%2==0){
-    console.log("even")
-}
-else{
-    console.log( "odd");
-}
- }
+//  function check(num){
+// if (num%2==0){
+//     console.log("even")
+// }
+// else{
+//     console.log( "odd");
+// }
+//  }
 
- check(3);
- check(2)
+//  check(3);
+//  check(2)
 
 
 //  3.Make function to reverse string
 
- function reverse(){
- 
-         
+// function reverseString(str) {
+//    let result = "";
+
+//    for (let i = str.length - 1; i >= 0; i--) {
+//       result = result + str[i];
+//    }
+
+//    return result;
+// }
+
+// console.log(reverseString("Vishal"));
 
 
- 
+
+// method 2
+
+// const reverseString = str => str.split("").reverse().join("");
+// console.log(reverseString("Vishal"));
+
+// "Vishal"
+// ↓ split("")
+// ["V","i","s","h","a","l"]
+
+// ↓ reverse()
+// ["l","a","h","s","i","V"]
+
+// ↓ join("")
+// "lahsiV"
+
+
+ function reverse(str){
+let result=" ";
+
+ for(let i= str.length-1; i>=0 ; i--){
+
+ result=result+str[i];
+ }
+   return  result ;
+
+
+
  }
 
- reverse("vishal")
+
+ console.log(reverse("happpy krisha conciusness day  pyarelal prji"));
