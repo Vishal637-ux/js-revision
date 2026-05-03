@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.navbar {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+
+.hero {
+  height: 90vh;
+  background: url('stadium.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.card {
+  padding: 30px;
+  background: lightgray;
+  border-radius: 10px;
+}
