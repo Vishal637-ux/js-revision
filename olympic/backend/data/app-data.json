@@ -1,0 +1,61 @@
+{
+  "sports": [
+    {
+      "title": "Swimming",
+      "description": "Racing, relays, and world-record energy in the pool.",
+      "icon": "waves"
+    },
+    {
+      "title": "Basketball",
+      "description": "Fast breaks, packed arenas, and medal games under bright lights.",
+      "icon": "court"
+    },
+    {
+      "title": "Athletics",
+      "description": "Sprints, jumps, throws, and the marathon through the city.",
+      "icon": "track"
+    },
+    {
+      "title": "Skateboarding",
+      "description": "Street and park contests with Southern California roots.",
+      "icon": "board"
+    }
+  ],
+  "venues": [
+    {
+      "title": "Stadium events",
+      "description": "Opening ceremony moments, athletics, and headline Olympic nights.",
+      "art": "bowl"
+    },
+    {
+      "title": "Coastal events",
+      "description": "Beach, board, and outdoor competition with a California backdrop.",
+      "art": "beach"
+    },
+    {
+      "title": "Arena sports",
+      "description": "Indoor finals, team sports, and high-energy medal sessions.",
+      "art": "arena"
+    }
+  ],
+  "news": [
+    {
+      "category": "Olympic Games",
+      "title": "LA28 continues preparations for a citywide celebration",
+      "description": "Planning focuses on athletes, fans, transport, sustainability, and memorable venues.",
+      "lead": true
+    },
+    {
+      "category": "Sports",
+      "title": "New and returning sports bring fresh energy to the programme",
+      "description": "The LA28 sports programme is designed to connect established Olympic history with new audiences.",
+      "lead": false
+    },
+    {
+      "category": "Culture",
+      "title": "Los Angeles creativity will be part of the Games identity",
+      "description": "Music, design, film, and local communities will shape the feeling of the Games.",
+      "lead": false
+    }
+  ]
+}

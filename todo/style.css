@@ -1,0 +1,9 @@
+body{
+  background: lightblue;
+}
+.container{
+  background:white;
+  padding:20px;
+  width:300px;
+  margin:100px auto;
+}

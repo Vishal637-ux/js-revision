@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA 2028 Olympic Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav" aria-label="Top navigation">
+      <a href="#">IOC</a>
+      <a href="#">Milano Cortina 2026</a>
+      <a class="active" href="#">LA 2028</a>
+      <a href="#">Brisbane 2032</a>
+      <a href="#">Museum</a>
+      <a href="#">Shop</a>
+      <a href="#">Airbnb</a>
+      <a href="#">Olympic Refuge Foundation</a>
+    </nav>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="rings-logo" href="#" aria-label="Olympics home">
+        <span class="ring blue"></span>
+        <span class="ring black"></span>
+        <span class="ring red"></span>
+        <span class="ring yellow"></span>
+        <span class="ring green"></span>
+      </a>
+
+      <div class="main-links">
+        <a href="#games">Olympic Games</a>
+        <a href="#sports">Sports</a>
+        <a href="#venues">Venues</a>
+        <a href="#news">News</a>
+        <a href="#search">Search</a>
+        <a href="#channel"><span class="live-dot"></span>Olympic Channel</a>
+      </div>
+
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-controls="menuDrawer" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <aside class="menu-drawer" id="menuDrawer" aria-label="Menu" hidden>
+    <div class="drawer-header">
+      <strong>Olympics</strong>
+      <button id="closeMenu" type="button" aria-label="Close menu">&times;</button>
+    </div>
+    <a href="#games">Olympic Games</a>
+    <a href="#sports">Sports</a>
+    <a href="#venues">Venues</a>
+    <a href="#news">News</a>
+    <a href="#search">Search</a>
+    <a href="#channel">Olympic Channel</a>
+    <a href="#footer">About the Olympics</a>
+  </aside>
+  <div class="overlay" id="overlay" hidden></div>
+
+  <main>
+    <section class="hero-section" id="games">
+      <div class="hero-copy">
+        <p class="kicker">Live Full-Stack App</p>
+        <h1>LA 2028 Olympic Games</h1>
+        <p id="gamesSummary">Fetching live Olympic data from the Express backend...</p>
+
+        <div class="status-row">
+          <span id="apiStatus">API: checking</span>
+          <span id="dbStatus">DB: checking</span>
+          <span id="updatedAt">Updated: checking</span>
+        </div>
+
+        <div class="hero-actions">
+          <button id="refreshButton" type="button">Refresh Live Data</button>
+          <a id="sourceLink" href="#" target="_blank" rel="noreferrer" hidden>Open Source</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span>Source</span>
+        <strong id="dataSource">Loading...</strong>
+        <p>Backend fetches live data, saves it to MongoDB, and sends it to this frontend.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="search">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Backend Search</p>
+          <h2>Search Live App Data</h2>
+        </div>
+      </div>
+      <form class="search-form" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Search sports, venues, news..." required>
+        <button type="submit">Search</button>
+      </form>
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+    </section>
+
+    <section class="content-section" id="sports">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">MongoDB Collection</p>
+          <h2>Featured Olympic Sports</h2>
+        </div>
+        <span class="count-pill" id="sportsCount">0 sports</span>
+      </div>
+
+      <div class="sports-grid" id="sportsGrid"></div>
+    </section>
+
+    <section class="content-section" id="venues">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Live Wikipedia Fetch</p>
+          <h2>Iconic Places Across LA</h2>
+        </div>
+        <span class="count-pill" id="venuesCount">0 venues</span>
+      </div>
+
+      <div class="venue-grid" id="venueGrid"></div>
+    </section>
+
+    <section class="content-section" id="news">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">MongoDB + Live Source</p>
+          <h2>Latest From LA28</h2>
+        </div>
+        <span class="count-pill" id="newsCount">0 stories</span>
+      </div>
+
+      <div class="news-grid" id="newsGrid"></div>
+    </section>
+
+    <section class="content-section info-section" id="channel">
+      <div>
+        <p class="kicker">How It Works</p>
+        <h2>Frontend calls Express APIs. Express reads MongoDB and fetches live data.</h2>
+      </div>
+      <div class="flow-grid">
+        <span>HTML/CSS/JS</span>
+        <span>Express API</span>
+        <span>MongoDB</span>
+        <span>Wikipedia API</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <strong>Olympics</strong>
+    <span>Node.js + Express.js + MongoDB</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

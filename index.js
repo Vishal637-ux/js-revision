@@ -33,4 +33,4 @@ let balance= null;
 console.log(null);
 
 
-//  6. git 
+//  6. git y

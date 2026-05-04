@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+     <!-- ✅ SIRF YE LINE ADD KI HAI -->
+    <meta name="google-site-verification" content="abcd1234" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator | Simple Health Tool</title>
+    <meta
+      name="description"
+      content="A simple BMI calculator that computes body mass index from age, weight, and height. Use this clean health tool to understand your BMI category quickly."
+    />
+    <meta
+      name="keywords"
+      content="BMI calculator, body mass index, health calculator, weight height calculator, age based BMI"
+    />
+    <meta name="author" content="BMI Calculator" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#dbeaf6" />
+    <meta property="og:site_name" content="BMI Calculator" />
+    <meta property="og:title" content="BMI Calculator | Simple Health Tool" />
+    <meta
+      property="og:description"
+      content="A clean and responsive BMI calculator to compute your body mass index from age, weight, and height."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BMI Calculator | Simple Health Tool" />
+    <meta
+      name="twitter:description"
+      content="A clean and responsive BMI calculator to compute your body mass index from age, weight, and height."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "BMI Calculator",
+        "description": "A simple BMI calculator that computes body mass index from age, weight, and height.",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "url": "https://example.com/bmi-calculator"
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h1>BMI Calculator</h1>
+              <p class="subtitle">
+                Enter your weight and height to see your BMI in a simple classic
+                layout.
+              </p>
+            </div>
+          </div>
+          <section class="overview">
+            <h2>Quick BMI health check</h2>
+            <p>
+              Calculate your body mass index instantly with this responsive BMI
+              tool. Add your age, weight, and height to see whether your BMI is
+              underweight, normal, overweight, or obese.
+            </p>
+          </section>
+          <div class="card-body">
+            <div class="panel panel-left">
+              <div class="input-group">
+                <label for="age">Age (years)</label>
+                <input type="number" id="age" placeholder="25" />
+              </div>
+              <div class="input-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="65" />
+              </div>
+              <div class="input-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" placeholder="170" />
+              </div>
+              <button id="calculate">Calculate</button>
+            </div>
+            <div class="panel panel-right">
+              <div class="result-box">
+                <div class="result-title">Result</div>
+                <div id="result" class="result-text">
+                  Enter values and press Calculate.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
