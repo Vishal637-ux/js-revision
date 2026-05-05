@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+ <link rel="stylesheet" href="./style.css" >
 </head>
 <body>
 
-    <h1 id="vishal">Calculator</h1>
+    <!--  div -->
+     <div id="box">
 
-    <div class="calculator">
-        <input type="text" id="display" disabled>
+<!--  heading -->
+  <h1>  KRISHNA CALCULOTOR </h1>
+    <div id="button">
+   <!-- input fields -->
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
 
-        <button onclick="press('1')" class="btn">1</button>
-        <button onclick="press('2')" class="btn">2</button>
-        <button onclick="press('3')" class="btn">3</button>
-        <button onclick="press('+')" class="btn">+</button>
+ <div id="button">
+    <!-- <button onclick="calculate('+')">Add</button>
+    <button onclick="calculate('-')">Subtract</button> -->
+    <button id="addBtn">Add</button>
+<button id="subBtn">Subtract</button>
+  </div>
 
-        <button onclick="calculate()" class="btn">=</button>
-        <button onclick="clearDisplay()" class="btn">C</button>
+     
+
+    <!-- result show karne ke liye -->
+    <h2 id="result">Result: </h2>
+   </div>
+      </div>
+
     </div>
-
-    <script src="script.js"></script>
-
+      <script src="./script.js"></script>
 </body>
 </html>
+
+<!--  muje calculator banana hai  -->
+  <!--  2 number lana haia  -->
+    <!--   css soch html soch  -->
+<!--   -->

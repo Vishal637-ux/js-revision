@@ -1,20 +1,28 @@
-body {
-  margin: 0;
-  height: 100vh;
+body{
+    width: 100vw;
+    height :100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-#vishal {
-  font-size: 24px;
-  margin-bottom: 20px;
+#first{
+  height :100px;
+  width:100px;
+  background-color:aqua;
+}
+#second{
+   height:100px;
+   width:100px;
+   background-color:aqua;
+  justify-content:space-between;
 }
 
-.calculator {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
+
+#box{
+   border: 10px;
+     
+
 }
+
