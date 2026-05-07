@@ -1,9 +1,9 @@
-<!--  --> tomoorroow task is to 
+ <!-- tomoorroow task is to 
    <!--  why  today one project is noty madew  tell me reason  -->
 
     <!-- make noqw any how  -->
 
-
+<!-- 
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -22,4 +22,76 @@
            
         </div>
     </body>
-    </html>
+    </html> --> 
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Color Changer</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background-color:white;
+      font-family:Arial, sans-serif;
+    }
+
+    .container{
+      text-align:center;
+    }
+
+    button{
+      padding:12px 25px;
+      font-size:18px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      background:black;
+      color:white;
+    }
+
+    h1{
+      margin-bottom:20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Background Color Changer</h1>
+    <button onclick="changeColor()">Change Color</button>
+  </div>
+
+  <script>
+    function changeColor() {
+
+      const colors = [
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "orange",
+        "purple",
+        "pink",
+        "black"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * colors.length);
+
+      document.body.style.backgroundColor = colors[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
