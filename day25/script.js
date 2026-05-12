@@ -124,7 +124,7 @@ let questions = [
 
 {
     question: "Who won the first IPL trophy?",
-    options: ["Mumbai Indians", "CSK", "Rajasthan Royals", "KKR"],
+    options: ["Mumbai Indians", "CS", "Rajasthan Royals", "KKR"],
     answer: "Rajastha Royal"
 }
 

@@ -1,0 +1,61 @@
+body{
+  margin:0px;
+  padding:0px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+background-color:aqua;
+ height:100vh;
+}
+
+
+#white{
+   width:100px;
+   height:200px;
+   color:white;
+
+}
+
+
+
+#red{
+   width:400px;
+   height:400px;
+    background-color:white;
+
+}
+
+
+
+
+#green{
+   width:100px;
+   height:200px;
+   background-color:lawngreen;
+
+}
+
+
+#blue{
+   width:400px;
+   height:400px;
+   color:blue;
+
+}
+
+#orange{
+   width:400px;
+   height:200px;
+   background-color:orange;
+
+}
+
+
+#yellow{
+   width:100px;
+   height:200px;
+ background-color:yellow;
+ 
+
+}
+
