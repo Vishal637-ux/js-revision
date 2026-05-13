@@ -27,6 +27,6 @@ let obj = {
 }
 
 Object.freeze(obj);
-obj.name = 3;
+obj.name = 66;
 console.log(obj);
 
